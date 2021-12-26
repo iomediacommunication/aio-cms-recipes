@@ -1,0 +1,24 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-crm-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsCrmBundle\\": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                }
+            },
+            "files": {
+                "config/packages/aio_cms_crm_bundle.yaml": {
+                    "contents": [
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "0ed427762d9bb0dabdb14896dca9568c264ef5f9"
+        }
+    }
+}
