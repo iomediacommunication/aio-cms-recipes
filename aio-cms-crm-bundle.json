@@ -14,11 +14,14 @@
             "files": {
                 "config/packages/aio_cms_crm_bundle.yaml": {
                     "contents": [
+                        "aio_cms_crm:",
+                        "    encode: true",
+                        ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "0ed427762d9bb0dabdb14896dca9568c264ef5f9"
+            "ref": "f6b3fe601996c0e6d13ed1a7a51ef705c9510180"
         }
     }
 }
