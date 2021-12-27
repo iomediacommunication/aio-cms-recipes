@@ -3,7 +3,7 @@
         "iomedia/aio-cms-crm-bundle": {
             "manifest": {
                 "bundles": {
-                    "Aio\\CmsCrmBundle\\": [
+                    "Aio\\CmsCrmBundle\\AioCmsCrmBundle": [
                         "all"
                     ]
                 },
