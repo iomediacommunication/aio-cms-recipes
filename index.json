@@ -12,6 +12,6 @@
   "_links": {
     "repository": "github.com/iomediacommunication/aio-cms-recipes",
     "origin_template": "{package}:{version}@github.com/iomediacommunication/aio-cms-recipes:main",
-    "recipe_template": "https://api.github.com/repos/iomediacommunication/aio-cms-recipes/contents/{package_dotted}.{version}.json"
+    "recipe_template": "https://api.github.com/repos/iomediacommunication/aio-cms-recipes/contents/{package_dotted}.json"
   }
 }
