@@ -11,11 +11,10 @@
                     "config/": "%CONFIG_DIR%"
                 },
                 "copy-from-package": {
-                    "recipe/config/packages/aio-cms-crm-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-crm-bundle.yaml",
-                    "recipe/src/Entity/CmsCrmBundle": "%SRC_DIR%/Entity/CmsCrmBundle"
+                    "recipe/config/packages/aio-cms-crm-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-crm-bundle.yaml"
                 }
             },
-            "ref": "deb1b87ea6690ba1068c22fc7fc5b41a82eab5a8"
+            "ref": "562aa7c8b5934b7aa98b692507d9dd3fdc8ae774"
         }
     }
 }
