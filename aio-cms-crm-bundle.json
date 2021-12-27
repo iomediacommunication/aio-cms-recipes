@@ -4,7 +4,7 @@
             "manifest": {
                 "bundles": {
                     "Aio\\CmsCrmBundle\\": [
-                        "all"
+                        "dev"
                     ]
                 },
                 "copy-from-recipe": {
@@ -32,7 +32,7 @@
                     "executable": false
                 }
             },
-            "ref": "6777aa52b72874998fef75457c6ab041ba4f58f2"
+            "ref": "9ebb9a2ec2ed22ba1e49332a9b7ad5b8ce607aed"
         }
     }
 }
