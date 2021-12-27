@@ -4,7 +4,7 @@
             "manifest": {
                 "bundles": {
                     "Aio\\CmsCrmBundle\\": [
-                        "dev"
+                        "all"
                     ]
                 },
                 "copy-from-recipe": {
@@ -14,25 +14,7 @@
                     "config/packages/aio-cms-crm-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-crm-bundle.yaml"
                 }
             },
-            "files": {
-                "config/packages/aio_cms_crm_bundle.yaml": {
-                    "contents": [
-                        "nelmio_cors:",
-                        "    defaults:",
-                        "        origin_regex: true",
-                        "        allow_origin: ['%env(CORS_ALLOW_ORIGIN)%']",
-                        "        allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']",
-                        "        allow_headers: ['Content-Type', 'Authorization']",
-                        "        expose_headers: ['Link']",
-                        "        max_age: 3600",
-                        "    paths:",
-                        "        '^/': null",
-                        ""
-                    ],
-                    "executable": false
-                }
-            },
-            "ref": "af577d63f6ab912609e0b5f1053e93cba8223422"
+            "ref": "e04ff4e7b56ce078ce1905012ac3ed5cc37de590"
         }
     }
 }
