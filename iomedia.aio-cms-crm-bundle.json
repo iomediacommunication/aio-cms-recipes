@@ -11,10 +11,13 @@
                     "config/": "%CONFIG_DIR%"
                 },
                 "copy-from-package": {
-                    "recipe/config/packages/aio-cms-crm-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-crm-bundle.yaml"
+                    "recipe/config/packages/aio-cms-crm-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-crm-bundle.yaml",
+                    "recipe/src/Entity/CmsCrmBundle/Address.php": "%SRC_DIR%/Entity/CmsCrmBundle/Address.php",
+                    "recipe/src/Entity/CmsCrmBundle/Contact.php": "%SRC_DIR%/Entity/CmsCrmBundle/Contact.php",
+                    "recipe/src/Entity/CmsCrmBundle/User.php": "%SRC_DIR%/Entity/CmsCrmBundle/User.php"
                 }
             },
-            "ref": "562aa7c8b5934b7aa98b692507d9dd3fdc8ae774"
+            "ref": "8abd62538e4001bae2f3695180b576d0dc4bfa90"
         }
     }
 }
