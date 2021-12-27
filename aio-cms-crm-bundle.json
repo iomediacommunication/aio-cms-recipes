@@ -14,14 +14,22 @@
             "files": {
                 "config/packages/aio_cms_crm_bundle.yaml": {
                     "contents": [
-                        "aio_cms_crm:",
-                        "    encode: true",
+                        "nelmio_cors:",
+                        "    defaults:",
+                        "        origin_regex: true",
+                        "        allow_origin: ['%env(CORS_ALLOW_ORIGIN)%']",
+                        "        allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']",
+                        "        allow_headers: ['Content-Type', 'Authorization']",
+                        "        expose_headers: ['Link']",
+                        "        max_age: 3600",
+                        "    paths:",
+                        "        '^/': null",
                         ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "f6b3fe601996c0e6d13ed1a7a51ef705c9510180"
+            "ref": "e5ffe3cc6631cdc987b99db93495a03dd8abb3d6"
         }
     }
 }
