@@ -9,7 +9,10 @@
                 },
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%"
-                }
+                },
+                "copy-from-package": {
+                    "config/packages/aio-cms-crm-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-crm-bundle.yaml"
+                },
             },
             "files": {
                 "config/packages/aio_cms_crm_bundle.yaml": {
@@ -29,7 +32,7 @@
                     "executable": false
                 }
             },
-            "ref": "e5ffe3cc6631cdc987b99db93495a03dd8abb3d6"
+            "ref": "6777aa52b72874998fef75457c6ab041ba4f58f2"
         }
     }
 }
