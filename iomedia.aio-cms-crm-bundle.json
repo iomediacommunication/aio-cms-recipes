@@ -14,7 +14,7 @@
                     "config/packages/aio-cms-crm-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-crm-bundle.yaml"
                 }
             },
-            "ref": "e04ff4e7b56ce078ce1905012ac3ed5cc37de590"
+            "ref": "c4ab8f1beaf1b50372d1067141f132970f321f73"
         }
     }
 }
