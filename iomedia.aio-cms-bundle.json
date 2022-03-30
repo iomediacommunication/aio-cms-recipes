@@ -10,11 +10,8 @@
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%"
                 },
-                "copy-from-package": {
-                    "recipe/public/robots.txt": "%PUBLIC_DIR%/robots.txt"
-                }
             },
-            "ref": "dfd6a6099faaa6a8183c857f77033e0b28750d39"
+            "ref": "c11c5e8202a4d337c1f6d4617b2922a76240a759"
         }
     }
 }
