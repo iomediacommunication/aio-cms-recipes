@@ -1,0 +1,20 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-crm-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsBundle\\AioCmsBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/public/robots.txt": "%PUBLIC_DIR%/robots.txt"
+                }
+            },
+            "ref": "dfd6a6099faaa6a8183c857f77033e0b28750d39"
+        }
+    }
+}
