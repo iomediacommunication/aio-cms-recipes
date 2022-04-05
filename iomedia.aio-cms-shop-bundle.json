@@ -1,0 +1,29 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-shop-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsShopBundle\\AioCmsShopBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/config/packages/aio-cms-shop-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-shop-bundle.yaml",
+                    "recipe/config/routes/aio-cms-shop-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-bundle.yaml",
+                    "recipe/src/Entity/CmsShopBundle/Currency.php": "%SRC_DIR%/Entity/CmsShopBundle/Currency.php",
+                    "recipe/src/Entity/CmsShopBundle/Currency.php": "%SRC_DIR%/Entity/CmsShopBundle/Currency.php",
+                    "recipe/src/Entity/CmsShopBundle/Order.php": "%SRC_DIR%/Entity/CmsShopBundle/Order.php",
+                    "recipe/src/Entity/CmsShopBundle/OrderItem.php": "%SRC_DIR%/Entity/CmsShopBundle/OrderItem.php",
+                    "recipe/src/Entity/CmsShopBundle/Price.php": "%SRC_DIR%/Entity/CmsShopBundle/Price.php",
+                    "recipe/src/Entity/CmsShopBundle/Product.php": "%SRC_DIR%/Entity/CmsShopBundle/Product.php",
+                    "recipe/src/Entity/CmsShopBundle/ProductTranslation.php": "%SRC_DIR%/Entity/CmsShopBundle/ProductTranslation.php",
+                    "recipe/src/Entity/CmsShopBundle/Stock.php": "%SRC_DIR%/Entity/CmsShopBundle/Stock.php"
+                }
+            },
+            "ref": "a1abbbd9c5904d358c10f8c7262b7f8ae92ffda5"
+        }
+    }
+}
