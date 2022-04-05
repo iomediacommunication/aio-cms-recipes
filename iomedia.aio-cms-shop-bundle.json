@@ -20,10 +20,10 @@
                     "recipe/src/Entity/CmsShopBundle/Price.php": "%SRC_DIR%/Entity/CmsShopBundle/Price.php",
                     "recipe/src/Entity/CmsShopBundle/Product.php": "%SRC_DIR%/Entity/CmsShopBundle/Product.php",
                     "recipe/src/Entity/CmsShopBundle/ProductTranslation.php": "%SRC_DIR%/Entity/CmsShopBundle/ProductTranslation.php",
-                    "recipe/src/Entity/CmsShopBundle/Stock.php": "%SRC_DIR%/Entity/CmsShopBundle/Stock.php",
+                    "recipe/src/Entity/CmsShopBundle/Stock.php": "%SRC_DIR%/Entity/CmsShopBundle/Stock.php"
                 }
             },
-            "ref": "ee46d7252463cdb141d9e21ae115e079"
+            "ref": "a1abbbd9c5904d358c10f8c7262b7f8ae92ffda5"
         }
     }
 }
