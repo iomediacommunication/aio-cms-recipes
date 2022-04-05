@@ -8,6 +8,14 @@
       "dev-main",
       "main"
     ],
+    "iomedia/aio-cms-shop-bundle": [
+      "1.5",
+      "1.5.x-dev",
+      "1.6",
+      "1.6.x-dev",
+      "dev-master",
+      "master"
+    ],
     "iomedia/aio-cms-bundle": [
       "1.6",
       "1.6.x-dev",
