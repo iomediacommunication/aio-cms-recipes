@@ -1,0 +1,101 @@
+{
+    "manifests": {
+        "iomedia/test-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Iomedia\\TestBundle\\TestBundle": [
+                        "dev",
+                        "test"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%",
+                    "tests/": "tests/",
+                    ".env.test.local": ".env.test.local",
+                    "phpunit.xml": "phpunit.xml"
+                },
+                "gitignore": [
+                    ".env.test.local"
+                ],
+                "post-install-output": [
+                    "  * Configurer la constante DATABASE_URL dans le fichier .env.test.local.",
+                    "",
+                    "  * Ajouter des fichiers de contenus dans le dossier tests/Resources/data/aio-cms.",
+                    ""
+                ]
+            },
+            "files": {
+                "config/packages/test/cache.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    iomedia_cache: '%kernel.cache_dir%/../iomedia/admin-test'",
+                        "",
+                        "framework:",
+                        "    cache:",
+                        "        directory: '%kernel.cache_dir%/../iomedia/admin-test'"
+                    ],
+                    "executable": false
+                },
+                ".env.test.local": {
+                    "contents": [
+                        "# define your env variables for the test env here",
+                        "###> doctrine/doctrine-bundle ###",
+                        "DATABASE_URL=mysql://root:root@db:3306/aio-cms-skeleton_test",
+                        "###< doctrine/doctrine-bundle ###",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "phpunit.xml": {
+                    "contents": [
+                        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+                        "",
+                        "<!-- https://phpunit.readthedocs.io/en/latest/configuration.html -->",
+                        "<phpunit xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"",
+                        "         xsi:noNamespaceSchemaLocation=\"bin/.phpunit/phpunit.xsd\"",
+                        "         backupGlobals=\"false\"",
+                        "         colors=\"true\"",
+                        "         bootstrap=\"tests/bootstrap.php\"",
+                        ">",
+                        "    <php>",
+                        "        <ini name=\"display_errors\" value=\"1\" />",
+                        "        <ini name=\"error_reporting\" value=\"-1\" />",
+                        "        <server name=\"APP_ENV\" value=\"test\" force=\"true\" />",
+                        "        <server name=\"SHELL_VERBOSITY\" value=\"-1\" />",
+                        "    </php>",
+                        "",
+                        "    <testsuites>",
+                        "        <testsuite name=\"Project Test Suite\">",
+                        "            <directory>tests</directory>",
+                        "        </testsuite>",
+                        "    </testsuites>",
+                        "",
+                        "    <filter>",
+                        "        <whitelist processUncoveredFilesFromWhitelist=\"true\">",
+                        "            <directory suffix=\".php\">src</directory>",
+                        "        </whitelist>",
+                        "    </filter>",
+                        "",
+                        "    <listeners>",
+                        "        <listener class=\"Symfony\\Bridge\\PhpUnit\\SymfonyTestsListener\" />",
+                        "    </listeners>",
+                        "",
+                        "    <extensions>",
+                        "        <extension class=\"DAMA\\DoctrineTestBundle\\PHPUnit\\PHPUnitExtension\" />",
+                        "    </extensions>",
+                        "</phpunit>",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "tests/Resources/data/aio-cms/.gitkeep": {
+                    "contents": [
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "be1651197495e5bb768b96ead3421d533e23bc64"
+        }
+    }
+}

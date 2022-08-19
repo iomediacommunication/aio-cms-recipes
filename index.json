@@ -21,6 +21,14 @@
       "1.6.x-dev",
       "dev-master",
       "master"
+    ],
+    "iomedia/test-bundle": [
+      "1.5",
+      "1.5.x-dev",
+      "1.6",
+      "1.6.x-dev",
+      "dev-master",
+      "master"
     ]
   },
   "branch": "main",
