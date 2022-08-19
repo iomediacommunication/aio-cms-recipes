@@ -9,7 +9,7 @@
                 },
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%"
-                },
+                }
             },
             "ref": "c11c5e8202a4d337c1f6d4617b2922a76240a759"
         }

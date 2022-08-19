@@ -14,7 +14,6 @@
                     "recipe/config/packages/aio-cms-shop-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-shop-bundle.yaml",
                     "recipe/config/routes/aio-cms-shop-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-bundle.yaml",
                     "recipe/src/Entity/CmsShopBundle/Currency.php": "%SRC_DIR%/Entity/CmsShopBundle/Currency.php",
-                    "recipe/src/Entity/CmsShopBundle/Currency.php": "%SRC_DIR%/Entity/CmsShopBundle/Currency.php",
                     "recipe/src/Entity/CmsShopBundle/Order.php": "%SRC_DIR%/Entity/CmsShopBundle/Order.php",
                     "recipe/src/Entity/CmsShopBundle/OrderItem.php": "%SRC_DIR%/Entity/CmsShopBundle/OrderItem.php",
                     "recipe/src/Entity/CmsShopBundle/Price.php": "%SRC_DIR%/Entity/CmsShopBundle/Price.php",
