@@ -12,15 +12,22 @@
                     "config/": "%CONFIG_DIR%",
                     "tests/": "tests/",
                     ".env.test.local": ".env.test.local",
+                    "php-cs-fixer.php": ".io-php-cs-fixer.php",
+                    "phpstan.neon": "phpstan.neon",
                     "phpunit.xml": "phpunit.xml"
                 },
                 "gitignore": [
-                    ".env.test.local"
+                    ".env.test.local",
+                    ".php-cs-fixer.dist.php"
                 ],
                 "post-install-output": [
                     "  * Configurer la constante DATABASE_URL dans le fichier .env.test.local.",
                     "",
                     "  * Ajouter des fichiers de contenus dans le dossier tests/Resources/data/aio-cms.",
+                    "",
+                    "  * Nouvelle configuration pour phpstan dans le fichier phpstan.neon.",
+                    "",
+                    "  * Nouvelle configuration pour php-cs-fixer dans le fichier .php-cs-fixer.php.",
                     ""
                 ]
             },
@@ -43,6 +50,64 @@
                         "DATABASE_URL=mysql://root:root@db:3306/aio-cms-skeleton_test",
                         "###< doctrine/doctrine-bundle ###",
                         ""
+                    ],
+                    "executable": false
+                },
+                "php-cs-fixer.php": {
+                    "contents":[
+                        "<?php",
+                        "",
+                        "$finder = PhpCsFixer\\Finder::create()",
+                        "    ->in(__DIR__)",
+                        "    ->notPath([",
+                        "        'config/bootstrap.php',",
+                        "        'config/bundles.php',",
+                        "        'tests/phpstan/symfony-console-application.php',",
+                        "        'tests/phpstan/doctrine-object-manager.php',",
+                        "        'tests/bootstrap.php',",
+                        "    ])",
+                        "    ->exclude([",
+                        "        'bin',",
+                        "        'node_modules',",
+                        "        'public',",
+                        "        'var',",
+                        "        'vendor',",
+                        "    ])",
+                        ";",
+                        "",
+                        "$config = new PhpCsFixer\\Config();",
+                        "$config",
+                        "    ->setRiskyAllowed(false)",
+                        "    ->setRules([",
+                        "        '@Symfony' => true,",
+                        "        '@PHP74Migration' => true,",
+                        "        'phpdoc_align' => ['align' => 'left',],",
+                        "        'phpdoc_separation' => false,",
+                        "        'phpdoc_summary' => false,",
+                        "        'visibility_required' => ['elements' => ['property', 'method', 'const'],],",
+                        "        'yoda_style' => true,",
+                        "    ])",
+                        "    ->setFinder($finder)",
+                        ";",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "phpstan.neon": {
+                    "contents": [
+                        "parameters:",
+                        "    level: 2",
+                        "    paths:",
+                        "        - src",
+                        "        - tests",
+                        "    excludePaths:",
+                        "        - tests/bootstrap.php",
+                        "    tmpDir: var/cache/phpstan",
+                        "    symfony:",
+                        "        console_application_loader: tests/phpstan/symfony-console-application.php",
+                        "        container_xml_path: '%rootDir%/../../../var/cache/dev/srcApp_KernelDevDebugContainer.xml'",
+                        "    doctrine:",
+                        "        objectManagerLoader: tests/phpstan/doctrine-object-manager.php"
                     ],
                     "executable": false
                 },
@@ -84,6 +149,36 @@
                         "        <extension class=\"DAMA\\DoctrineTestBundle\\PHPUnit\\PHPUnitExtension\" />",
                         "    </extensions>",
                         "</phpunit>",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "tests/phpstan/symfony-console-application.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "use App\\Kernel;",
+                        "use Symfony\\Bundle\\FrameworkBundle\\Console\\Application;",
+                        "",
+                        "require __DIR__ . '/../../config/bootstrap.php';",
+                        "$kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);",
+                        "",
+                        "return new Application($kernel);",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "tests/phpstan/doctrine-object-manager.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "use App\\Kernel;",
+                        "",
+                        "require __DIR__ . '/../../config/bootstrap.php';",
+                        "$kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);",
+                        "$kernel->boot();",
+                        "",
+                        "return $kernel->getContainer()->get('doctrine')->getManager();",
                         ""
                     ],
                     "executable": false
