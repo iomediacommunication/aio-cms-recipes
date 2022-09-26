@@ -1,0 +1,20 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-notification-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsNotificationBundle\\AioCmsNotificationBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/config/routes/aio-cms-shop-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-bundle.yaml",
+                }
+            },
+            "ref": "4995f101f80e136e5af5a2d959dc4948ec52fe7a"
+        }
+    }
+}
