@@ -21,7 +21,7 @@
                     ".php-cs-fixer.dist.php"
                 ],
                 "post-install-output": [
-                    "  * Configurer la constante DATABASE_URL dans le fichier .env.test.local.",
+                    "  * Configurer la constante DATABASE_TEST_URL dans le fichier .env.test.local.",
                     "",
                     "  * Ajouter des fichiers de contenus dans le dossier tests/Resources/data/aio-cms.",
                     "",
@@ -43,11 +43,20 @@
                     ],
                     "executable": false
                 },
+                "config/packages/test/doctrine.yaml": {
+                    "contents": [
+                        "doctrine:",
+                        "    dbal:",
+                        "        url: '%env(resolve:DATABASE_TEST_URL)%'",
+                        ""
+                    ],
+                    "executable": false
+                },
                 ".env.test.local": {
                     "contents": [
                         "# define your env variables for the test env here",
                         "###> doctrine/doctrine-bundle ###",
-                        "DATABASE_URL=mysql://root:root@db:3306/aio-cms-skeleton_test",
+                        "DATABASE_TEST_URL=mysql://root:root@db:3306/database_test",
                         "###< doctrine/doctrine-bundle ###",
                         ""
                     ],
