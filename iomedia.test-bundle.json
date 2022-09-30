@@ -11,17 +11,35 @@
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%",
                     "tests/": "tests/",
-                    ".env.test.local": ".env.test.local",
-                    "php-cs-fixer.php": ".io-php-cs-fixer.php",
+                    ".env.test": ".env.test",
+                    ".php-cs-fixer.php": ".php-cs-fixer.php",
                     "phpstan.neon": "phpstan.neon",
                     "phpunit.xml": "phpunit.xml"
                 },
                 "gitignore": [
-                    ".env.test.local",
-                    ".php-cs-fixer.dist.php"
+                    ".php-cs-fixer.dist.php",
+                    "phpunit.xml.dist"
                 ],
+                "composer-scripts": {
+                    "composer-validate": "composer validate --no-check-lock",
+                    "composer-security": "vendor/bin/local-php-security-checker-installer && vendor/bin/local-php-security-checker",
+                    "php-cs-fixer-check": "vendor/bin/php-cs-fixer list-files --config .php-cs-fixer.php",
+                    "php-cs-fixer-fix": "vendor/bin/php-cs-fixer fix --config .php-cs-fixer.php",
+                    "phpstan": "vendor/bin/phpstan analyze -c phpstan.neon",
+                    "tests-db-create": "bin/console iomedia:database-test:create --env=test --no-interaction",
+                    "tests": "vendor/bin/phpunit -v --stop-on-failure",
+                    "tests-all": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer-validate",
+                        "@composer-security",
+                        "@phpstan",
+                        "@php-cs-fixer-check",
+                        "@tests-db-create",
+                        "@tests"
+                    ]
+                },
                 "post-install-output": [
-                    "  * Configurer la constante DATABASE_URL dans le fichier .env.test.local.",
+                    "  * Configurer la constante DATABASE_URL dans le fichier .env.test.",
                     "",
                     "  * Ajouter des fichiers de contenus dans le dossier tests/Resources/data/aio-cms.",
                     "",
@@ -43,17 +61,26 @@
                     ],
                     "executable": false
                 },
-                ".env.test.local": {
+                "config/packpages/test/doctrine.yaml": {
+                    "contents": [
+                        "doctrine:",
+                        "    dbal:",
+                        "        url: '%env(resolve:DATABASE_TEST_URL)%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                ".env.test": {
                     "contents": [
                         "# define your env variables for the test env here",
                         "###> doctrine/doctrine-bundle ###",
-                        "DATABASE_URL=mysql://root:root@db:3306/aio-cms-skeleton_test",
+                        "DATABASE_TEST_URL=mysql://root:root@db:3306/test",
                         "###< doctrine/doctrine-bundle ###",
                         ""
                     ],
                     "executable": false
                 },
-                "php-cs-fixer.php": {
+                ".php-cs-fixer.php": {
                     "contents":[
                         "<?php",
                         "",
@@ -75,8 +102,7 @@
                         "    ])",
                         ";",
                         "",
-                        "$config = new PhpCsFixer\\Config();",
-                        "$config",
+                        "return (new PhpCsFixer\\Config())",
                         "    ->setRiskyAllowed(false)",
                         "    ->setRules([",
                         "        '@Symfony' => true,",
@@ -100,6 +126,11 @@
                         "    paths:",
                         "        - src",
                         "        - tests",
+                        "    includes:",
+                        "        - vendor/phpstan/phpstan-doctrine/extension.neon",
+                        "        - vendor/phpstan/phpstan-doctrine/rules.neon",
+                        "        - vendor/phpstan/phpstan-symfony/extension.neon",
+                        "        - vendor/phpstan/phpstan-symfony/rules.neon",
                         "    excludePaths:",
                         "        - tests/bootstrap.php",
                         "    tmpDir: var/cache/phpstan",
