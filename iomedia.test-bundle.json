@@ -9,150 +9,10 @@
                     ]
                 },
                 "copy-from-recipe": {
-                    "config/": "%CONFIG_DIR%",
-                    "tests/": "tests/",
-                    ".env.test.local": ".env.test.local",
-                    "php-cs-fixer.php": ".io-php-cs-fixer.php",
-                    "phpstan.neon": "phpstan.neon",
-                    "phpunit.xml": "phpunit.xml"
-                },
-                "gitignore": [
-                    ".env.test.local",
-                    ".php-cs-fixer.dist.php"
-                ],
-                "post-install-output": [
-                    "  * Configurer la constante DATABASE_URL dans le fichier .env.test.local.",
-                    "",
-                    "  * Ajouter des fichiers de contenus dans le dossier tests/Resources/data/aio-cms.",
-                    "",
-                    "  * Nouvelle configuration pour phpstan dans le fichier phpstan.neon.",
-                    "",
-                    "  * Nouvelle configuration pour php-cs-fixer dans le fichier .php-cs-fixer.php.",
-                    ""
-                ]
+                    "tests/": "tests/"
+                }
             },
             "files": {
-                "config/packages/test/cache.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "    iomedia_cache: '%kernel.cache_dir%/../iomedia/admin-test'",
-                        "",
-                        "framework:",
-                        "    cache:",
-                        "        directory: '%kernel.cache_dir%/../iomedia/admin-test'"
-                    ],
-                    "executable": false
-                },
-                ".env.test.local": {
-                    "contents": [
-                        "# define your env variables for the test env here",
-                        "###> doctrine/doctrine-bundle ###",
-                        "DATABASE_URL=mysql://root:root@db:3306/aio-cms-skeleton_test",
-                        "###< doctrine/doctrine-bundle ###",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "php-cs-fixer.php": {
-                    "contents":[
-                        "<?php",
-                        "",
-                        "$finder = PhpCsFixer\\Finder::create()",
-                        "    ->in(__DIR__)",
-                        "    ->notPath([",
-                        "        'config/bootstrap.php',",
-                        "        'config/bundles.php',",
-                        "        'tests/phpstan/symfony-console-application.php',",
-                        "        'tests/phpstan/doctrine-object-manager.php',",
-                        "        'tests/bootstrap.php',",
-                        "    ])",
-                        "    ->exclude([",
-                        "        'bin',",
-                        "        'node_modules',",
-                        "        'public',",
-                        "        'var',",
-                        "        'vendor',",
-                        "    ])",
-                        ";",
-                        "",
-                        "$config = new PhpCsFixer\\Config();",
-                        "$config",
-                        "    ->setRiskyAllowed(false)",
-                        "    ->setRules([",
-                        "        '@Symfony' => true,",
-                        "        '@PHP74Migration' => true,",
-                        "        'phpdoc_align' => ['align' => 'left',],",
-                        "        'phpdoc_separation' => false,",
-                        "        'phpdoc_summary' => false,",
-                        "        'visibility_required' => ['elements' => ['property', 'method', 'const'],],",
-                        "        'yoda_style' => true,",
-                        "    ])",
-                        "    ->setFinder($finder)",
-                        ";",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "phpstan.neon": {
-                    "contents": [
-                        "parameters:",
-                        "    level: 2",
-                        "    paths:",
-                        "        - src",
-                        "        - tests",
-                        "    excludePaths:",
-                        "        - tests/bootstrap.php",
-                        "    tmpDir: var/cache/phpstan",
-                        "    symfony:",
-                        "        console_application_loader: tests/phpstan/symfony-console-application.php",
-                        "        container_xml_path: '%rootDir%/../../../var/cache/dev/srcApp_KernelDevDebugContainer.xml'",
-                        "    doctrine:",
-                        "        objectManagerLoader: tests/phpstan/doctrine-object-manager.php"
-                    ],
-                    "executable": false
-                },
-                "phpunit.xml": {
-                    "contents": [
-                        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
-                        "",
-                        "<!-- https://phpunit.readthedocs.io/en/latest/configuration.html -->",
-                        "<phpunit xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"",
-                        "         xsi:noNamespaceSchemaLocation=\"bin/.phpunit/phpunit.xsd\"",
-                        "         backupGlobals=\"false\"",
-                        "         colors=\"true\"",
-                        "         bootstrap=\"tests/bootstrap.php\"",
-                        ">",
-                        "    <php>",
-                        "        <ini name=\"display_errors\" value=\"1\" />",
-                        "        <ini name=\"error_reporting\" value=\"-1\" />",
-                        "        <server name=\"APP_ENV\" value=\"test\" force=\"true\" />",
-                        "        <server name=\"SHELL_VERBOSITY\" value=\"-1\" />",
-                        "    </php>",
-                        "",
-                        "    <testsuites>",
-                        "        <testsuite name=\"Project Test Suite\">",
-                        "            <directory>tests</directory>",
-                        "        </testsuite>",
-                        "    </testsuites>",
-                        "",
-                        "    <filter>",
-                        "        <whitelist processUncoveredFilesFromWhitelist=\"true\">",
-                        "            <directory suffix=\".php\">src</directory>",
-                        "        </whitelist>",
-                        "    </filter>",
-                        "",
-                        "    <listeners>",
-                        "        <listener class=\"Symfony\\Bridge\\PhpUnit\\SymfonyTestsListener\" />",
-                        "    </listeners>",
-                        "",
-                        "    <extensions>",
-                        "        <extension class=\"DAMA\\DoctrineTestBundle\\PHPUnit\\PHPUnitExtension\" />",
-                        "    </extensions>",
-                        "</phpunit>",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "tests/phpstan/symfony-console-application.php": {
                     "contents": [
                         "<?php",
@@ -179,12 +39,6 @@
                         "$kernel->boot();",
                         "",
                         "return $kernel->getContainer()->get('doctrine')->getManager();",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "tests/Resources/data/aio-cms/.gitkeep": {
-                    "contents": [
                         ""
                     ],
                     "executable": false
