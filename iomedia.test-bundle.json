@@ -49,6 +49,13 @@
                         "###> doctrine/doctrine-bundle ###",
                         "DATABASE_URL=mysql://root:root@db:3306/aio-cms-skeleton_test",
                         "###< doctrine/doctrine-bundle ###",
+                        "",
+                        "###> Elasticsearch ###",
+                        "ELASTIC_SEARCH_HOST=",
+                        "ELASTIC_SEARCH_USERNAME=",
+                        "ELASTIC_SEARCH_PASSWORD=",
+                        "ELASTIC_SEARCH_SEARCH_ENABLED=",
+                        "###< Elasticsearch ###",
                         ""
                     ],
                     "executable": false
