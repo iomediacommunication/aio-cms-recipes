@@ -11,10 +11,14 @@
                     "config/": "%CONFIG_DIR%"
                 },
                 "copy-from-package": {
-                    "recipe/config/routes/aio-cms-shop-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-bundle.yaml",
-                }
+                    "recipe/config/routes/aio-cms-notification-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-notification-bundle.yaml",
+                    "recipe/config/packages/aio-cms-notification-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-notification-bundle.yaml"
+                },
+                "gitignore": [
+                    "/%CONFIG_DIR%/firebase/*.json"
+                ],
             },
-            "ref": "4995f101f80e136e5af5a2d959dc4948ec52fe7a"
+            "ref": "ad3e88a56f21d489fade129967bc4f57998948f8"
         }
     }
 }
