@@ -15,10 +15,12 @@
                     "recipe/config/packages/aio-cms-notification-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-notification-bundle.yaml"
                 },
                 "gitignore": [
-                    "/%CONFIG_DIR%/firebase/*.json"
+                    "/%CONFIG_DIR%/firebase/*.json",
+                    "!/%CONFIG_DIR%/firebase/test",
+                    "!/%CONFIG_DIR%/firebase/test/*.json"
                 ],
             },
-            "ref": "ad3e88a56f21d489fade129967bc4f57998948f8"
+            "ref": "94867b6d21f097b35b64899d91ac8045557bef01"
         }
     }
 }
