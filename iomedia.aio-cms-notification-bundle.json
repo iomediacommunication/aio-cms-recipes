@@ -18,7 +18,7 @@
                     "/%CONFIG_DIR%/firebase/*.json",
                     "!/%CONFIG_DIR%/firebase/test",
                     "!/%CONFIG_DIR%/firebase/test/*.json"
-                ],
+                ]
             },
             "ref": "94867b6d21f097b35b64899d91ac8045557bef01"
         }
