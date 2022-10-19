@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "iomedia/aio-cms-from-manager-bundle": {
+        "iomedia/aio-cms-form-manager-bundle": {
             "manifest": {
                 "bundles": {
                     "Aio\\CmsFormManagerBundle\\AioCmsFormManagerBundle": [
@@ -11,8 +11,8 @@
                     "config/": "%CONFIG_DIR%"
                 },
                 "copy-from-package": {
-                    "recipe/config/routes/aio-cms-from-manager-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-from-manager-bundle.yaml",
-                    "recipe/config/packages/aio-cms-from-manager-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-from-manager-bundle.yaml"
+                    "recipe/config/routes/aio-cms-form-manager-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-form-manager-bundle.yaml",
+                    "recipe/config/packages/aio-cms-form-manager-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-form-manager-bundle.yaml"
                 },
                 "env": {
                   "FORM_MANAGER_URL": "https://forms.allinone.io",
