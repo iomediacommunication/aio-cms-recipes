@@ -1,0 +1,32 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-from-manager-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsFormManagerBundle\\AioCmsFormManagerBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/config/routes/aio-cms-from-manager-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-from-manager-bundle.yaml",
+                    "recipe/config/packages/aio-cms-from-manager-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-from-manager-bundle.yaml"
+                },
+                "env": {
+                  "FORM_MANAGER_URL": "https://forms.allinone.io",
+                  "FORM_MANAGER_TOKEN": "machform",
+                  "FORM_MANAGER_DATABASE_HOST": "prefix.myd.infomaniak.com",
+                  "FORM_MANAGER_DATABASE_USER": "prefix_machform",
+                  "FORM_MANAGER_DATABASE_NAME": "prefix_machform",
+                  "FORM_MANAGER_DATABASE_PASSWORD": "%generate(secret)%",
+                  "FORM_MANAGER_USER_1_DISPLAY": "Client",
+                  "FORM_MANAGER_USER_1_USER": "client@allinone.io",
+                  "FORM_MANAGER_USER_1_PASS": "%generate(secret)%"  
+                }
+            },
+            "ref": "33e21125ba17ec20aba9658b89e666906e72448d"
+        }
+    }
+}
