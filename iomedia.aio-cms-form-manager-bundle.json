@@ -26,7 +26,7 @@
                   "FORM_MANAGER_USER_1_PASS": "%generate(secret)%"  
                 }
             },
-            "ref": "33e21125ba17ec20aba9658b89e666906e72448d"
+            "ref": "7d7ca6fde79025cfaeb611e2d7554b5f4daf28e5"
         }
     }
 }
