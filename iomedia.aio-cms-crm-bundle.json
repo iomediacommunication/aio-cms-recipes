@@ -21,7 +21,7 @@
                     "recipe/src/Entity/CmsCrmBundle/User.php": "%SRC_DIR%/Entity/CmsCrmBundle/User.php"
                 }
             },
-            "ref": "6ee8d5e0482db30e5a98e116165e08683d64f670"
+            "ref": "fcc2bf5d5faa9e3392afee2482b959a37215d93d"
         }
     }
 }
