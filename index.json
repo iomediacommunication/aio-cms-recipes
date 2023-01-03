@@ -29,6 +29,8 @@
     "iomedia/aio-cms-bundle": [
       "1.6",
       "1.6.x-dev",
+      "1.8",
+      "1.8.x-dev",
       "dev-master",
       "master"
     ],
