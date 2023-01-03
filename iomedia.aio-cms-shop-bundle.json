@@ -5,6 +5,9 @@
                 "bundles": {
                     "Aio\\CmsShopBundle\\AioCmsShopBundle": [
                         "all"
+                    ],
+                    "Knp\\DoctrineBehaviors\\Bundle\\DoctrineBehaviorsBundle": [
+                        "all"
                     ]
                 },
                 "copy-from-recipe": {
@@ -22,7 +25,7 @@
                     "recipe/src/Entity/CmsShopBundle/Stock.php": "%SRC_DIR%/Entity/CmsShopBundle/Stock.php"
                 }
             },
-            "ref": "a1abbbd9c5904d358c10f8c7262b7f8ae92ffda5"
+            "ref": "1b4ed7cf34320ab03191626b85abcd3ba774993c"
         }
     }
 }
