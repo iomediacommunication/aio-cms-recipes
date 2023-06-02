@@ -1,0 +1,17 @@
+{
+    "manifests": {
+        "iomedia/aio-log-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\LogBundle\\AioLogBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-package": {
+                    "recipe/src/AioLog.php": "%SRC_DIR%/Entity/AioLog.php"
+                }
+            },
+            "ref": "17ce616b2038a97466dd3c23af5533413f6cc5a7"
+        }
+    }
+}
