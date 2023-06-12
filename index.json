@@ -68,6 +68,11 @@
       "dev-francois/4.0-aio-log-bundle",
       "4.0",
       "4.0.x-dev"
+    ],
+    "iomedia/aio-reaction-bundle": [
+      "dev-master",
+      "master",
+      "dev-feat/aio-reaction-bundle"
     ]
   },
   "branch": "main",
