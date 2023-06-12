@@ -1,0 +1,21 @@
+{
+    "manifests": {
+        "iomedia/aio-reaction-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\ReactionBundle\\AioReactionBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/config/packages/aio-reaction-bundle.yaml": "%CONFIG_DIR%/packages/aio-reaction-bundle.yaml",
+                    "recipe/config/routes/aio-reaction-bundle.yaml": "%CONFIG_DIR%/routes/aio-reaction-bundle.yaml"
+                }
+            },
+            "ref": "4c2ce52f7a42d2db444d32230d86c610831c61f2"
+        }
+    }
+}
