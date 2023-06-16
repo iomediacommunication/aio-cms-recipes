@@ -65,9 +65,8 @@
       "master"
     ],
     "iomedia/aio-log-bundle": [
-      "dev-francois/4.0-aio-log-bundle",
-      "4.0",
-      "4.0.x-dev"
+      "main",
+      "dev-main"
     ],
     "iomedia/aio-reaction-bundle": [
       "dev-master",
