@@ -23,17 +23,19 @@
                         "file": "%SRC_DIR%/Entity/CmsShopBundle/OrderItem.php",
                         "content": "\nuse Aio\\CmsShopPassBundle\\Entity\\Decorator\\OrderItemPassInterface;\nuse Aio\\CmsShopPassBundle\\Entity\\Decorator\\OrderItemPassTrait;\n",
                         "position": "after_target",
-                        "target": "namespace App\\Entity\\CmsShopBundle;"
+                        "target": "namespace App\\Entity\\CmsShopBundle;",
+                        "requires": "iomedia/aio-cms-shop-pass-bundle"
                     },
                     {
                         "file": "%SRC_DIR%/Entity/CmsShopBundle/OrderItem.php",
                         "content": " implements OrderItemPassInterface",
                         "position": "after_target",
-                        "target": "class OrderItem extends \\Aio\\CmsShopBundle\\Entity\\OrderItem"
+                        "target": "class OrderItem extends \\Aio\\CmsShopBundle\\Entity\\OrderItem",
+                        "requires": "iomedia/aio-cms-shop-pass-bundle"
                     }
                 ]
             },
-            "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff09"
+            "ref": "7e602eafcc0634eaf4eb2f84924f7aee9eb07c7b"
         }
     }
 }
