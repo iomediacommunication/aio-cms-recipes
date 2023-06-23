@@ -1,0 +1,17 @@
+{
+    "manifests": {
+        "iomedia/aio-security-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\SecurityBundle\\AioSecurityBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-package": {
+                    "recipe/src/User.php": "%SRC_DIR%/Entity/User.php"
+                }
+            },
+            "ref": "5aad78a635853bca6b95468dad6c205ea857c9f4"
+        }
+    }
+}

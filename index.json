@@ -64,6 +64,14 @@
       "dev-master",
       "master"
     ],
+    "iomedia/aio-log-bundle": [
+      "main",
+      "dev-main"
+    ],
+    "iomedia/aio-security-bundle": [
+      "main",
+      "dev-main"
+    ],
     "iomedia/aio-reaction-bundle": [
       "dev-master",
       "master",
