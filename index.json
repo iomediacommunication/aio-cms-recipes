@@ -76,6 +76,10 @@
       "dev-master",
       "master",
       "dev-feat/aio-reaction-bundle"
+    ],
+    "iomedia/aio-cms-shop-pass-bundle": [
+      "dev-master",
+      "master"
     ]
   },
   "branch": "main",

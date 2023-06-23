@@ -1,0 +1,39 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-shop-pass-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsShopPassBundle\\AioCmsShopPassBundle": [
+                        "all"
+                    ],
+                    "Knp\\DoctrineBehaviors\\Bundle\\DoctrineBehaviorsBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/config/packages/aio-cms-shop-pass-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-shop-pass-bundle.yaml",
+                    "recipe/config/routes/aio-cms-shop-pass-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-pass-bundle.yaml",
+                    "recipe/src/Entity/CmsShopPassBundle/Pass.php": "%SRC_DIR%/Entity/CmsShopPassBundle/Pass.php"
+                },
+                "add-lines": [
+                    {
+                        "file": "%SRC_DIR%/Entity/CmsShopBundle/OrderItem.php",
+                        "content": "\nuse Aio\\CmsShopPassBundle\\Entity\\Decorator\\OrderItemPassInterface;\nuse Aio\\CmsShopPassBundle\\Entity\\Decorator\\OrderItemPassTrait;\n",
+                        "position": "after_target",
+                        "target": "namespace App\\Entity\\CmsShopBundle;"
+                    },
+                    {
+                        "file": "%SRC_DIR%/Entity/CmsShopBundle/OrderItem.php",
+                        "content": " implements OrderItemPassInterface",
+                        "position": "after_target",
+                        "target": "class OrderItem extends \\Aio\\CmsShopBundle\\Entity\\OrderItem"
+                    }
+                ]
+            },
+            "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff09"
+        }
+    }
+}
