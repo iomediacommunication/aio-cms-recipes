@@ -6,7 +6,7 @@
                     "Aio\\CmsShopPassBundle\\AioCmsShopPassBundle": [
                         "all"
                     ],
-                    "Knp\\DoctrineBehaviors\\Bundle\\DoctrineBehaviorsBundle": [
+                    "Knp\\DoctrineBehaviors\\DoctrineBehaviorsBundle": [
                         "all"
                     ]
                 },
@@ -35,7 +35,7 @@
                     }
                 ]
             },
-            "ref": "7e602eafcc0634eaf4eb2f84924f7aee9eb07c7b"
+            "ref": "9fe525a5dfe9dca49bdc2b62a75f74ba3e6ebb1b"
         }
     }
 }

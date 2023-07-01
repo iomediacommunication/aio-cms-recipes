@@ -6,7 +6,7 @@
                     "Aio\\CmsShopBundle\\AioCmsShopBundle": [
                         "all"
                     ],
-                    "Knp\\DoctrineBehaviors\\Bundle\\DoctrineBehaviorsBundle": [
+                    "Knp\\DoctrineBehaviors\\DoctrineBehaviorsBundle": [
                         "all"
                     ]
                 },
@@ -21,14 +21,13 @@
                     "recipe/src/Entity/CmsShopBundle/Currency.php": "%SRC_DIR%/Entity/CmsShopBundle/Currency.php",
                     "recipe/src/Entity/CmsShopBundle/Order.php": "%SRC_DIR%/Entity/CmsShopBundle/Order.php",
                     "recipe/src/Entity/CmsShopBundle/OrderItem.php": "%SRC_DIR%/Entity/CmsShopBundle/OrderItem.php",
-                    "recipe/src/Entity/CmsShopBundle/Pass.php": "%SRC_DIR%/Entity/CmsShopBundle/Pass.php",
                     "recipe/src/Entity/CmsShopBundle/Price.php": "%SRC_DIR%/Entity/CmsShopBundle/Price.php",
                     "recipe/src/Entity/CmsShopBundle/Product.php": "%SRC_DIR%/Entity/CmsShopBundle/Product.php",
                     "recipe/src/Entity/CmsShopBundle/ProductTranslation.php": "%SRC_DIR%/Entity/CmsShopBundle/ProductTranslation.php",
                     "recipe/src/Entity/CmsShopBundle/Stock.php": "%SRC_DIR%/Entity/CmsShopBundle/Stock.php"
                 }
             },
-            "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff09"
+            "ref": "2a07997683dc3e8d2cd2451727b7346d2a3a6066"
         }
     }
 }
