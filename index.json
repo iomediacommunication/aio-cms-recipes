@@ -79,7 +79,9 @@
     ],
     "iomedia/aio-cms-shop-pass-bundle": [
       "dev-master",
-      "master"
+      "master",
+      "feat/aio-cms-shop-pass-bundle",
+      "feat/aio-cms-shop-pass-bundle-statistics"
     ]
   },
   "branch": "main",
