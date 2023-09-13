@@ -82,6 +82,9 @@
       "master",
       "feat/aio-cms-shop-pass-bundle",
       "feat/aio-cms-shop-pass-bundle-statistics"
+    ],
+    "iomedia/aio-nav-bundle": [
+      "1.10"
     ]
   },
   "branch": "main",

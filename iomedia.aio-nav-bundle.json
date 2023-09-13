@@ -1,0 +1,20 @@
+{
+  "manifests": {
+    "iomedia/aio-nav-bundle": {
+      "manifest": {
+        "bundles": {
+          "Aio\\NavBundle\\AioNavBundle": [
+            "all"
+          ]
+        },
+        "copy-from-recipe": {
+          "config/": "%CONFIG_DIR%"
+        },
+        "copy-from-package": {
+          "recipe/config/packages/aio-nav-bundle.yaml": "%CONFIG_DIR%/packages/aio-nav-bundle.yaml"
+        }
+      },
+      "ref": "2740585b42a7369d65402f3f9b444c9f95abd4ea"
+    }
+  }
+}
