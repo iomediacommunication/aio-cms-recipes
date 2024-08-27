@@ -6,7 +6,7 @@
                     "Aio\\CmsCrmBundle\\AioCmsCrmBundle": [
                         "all"
                     ],
-                    "Knp\\DoctrineBehaviors\\Bundle\\DoctrineBehaviorsBundle": [
+                    "Knp\\DoctrineBehaviors\\DoctrineBehaviorsBundle": [
                         "all"
                     ]
                 },
