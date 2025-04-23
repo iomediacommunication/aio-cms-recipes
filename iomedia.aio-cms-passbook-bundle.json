@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-passbook-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsPassbookBundle\\AioCmsPassbookBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/config/routes/aio-cms-form-manager-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-passbook-bundle.yaml",
+                    "recipe/config/packages/aio-cms-passbook-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-passbook-bundle.yaml"
+                },
+                "env": {
+                  "PASSBOOK_APPLE_TYPE": "",
+                  "PASSBOOK_APPLE_TEAM": "",
+                  "PASSBOOK_APPLE_ORG": "",
+                  "PASSBOOK_BASE_URL": "",
+                  "PASSBOOK_P12_PASSWORD": "",
+                }
+            },
+            "ref": "a92f86b23de1cb8f71a2b6cbf6b299e0e6909b38"
+        }
+    }
+}
