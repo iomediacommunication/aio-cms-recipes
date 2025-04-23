@@ -85,7 +85,7 @@
     ],
     "iomedia/aio-cms-passbook-bundle": [
       "dev-master",
-      "master",
+      "master"
     ]
   },
   "branch": "main",
