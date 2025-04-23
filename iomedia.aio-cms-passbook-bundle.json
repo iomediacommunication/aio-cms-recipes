@@ -20,7 +20,10 @@
                   "PASSBOOK_APPLE_ORG": "",
                   "PASSBOOK_BASE_URL": "",
                   "PASSBOOK_P12_PASSWORD": "",
-                }
+                },
+                "gitignore": [
+                    "/%CONFIG_DIR%/certs/"
+                ]
             },
             "ref": "a92f86b23de1cb8f71a2b6cbf6b299e0e6909b38"
         }
