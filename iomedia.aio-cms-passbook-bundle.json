@@ -19,7 +19,7 @@
                   "PASSBOOK_APPLE_TEAM": "",
                   "PASSBOOK_APPLE_ORG": "",
                   "PASSBOOK_BASE_URL": "",
-                  "PASSBOOK_P12_PASSWORD": "",
+                  "PASSBOOK_P12_PASSWORD": ""
                 },
                 "gitignore": [
                     "/%CONFIG_DIR%/certs/"
