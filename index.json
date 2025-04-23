@@ -82,6 +82,10 @@
       "master",
       "feat/aio-cms-shop-pass-bundle",
       "feat/aio-cms-shop-pass-bundle-statistics"
+    ],
+    "iomedia/aio-cms-passbook-bundle": [
+      "dev-master",
+      "master",
     ]
   },
   "branch": "main",
