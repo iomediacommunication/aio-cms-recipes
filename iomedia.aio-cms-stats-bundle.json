@@ -16,7 +16,9 @@
         },
         "env": {
           "PLAUSIBLE_EMBED_WEBSITE": "",
-          "PLAUSIBLE_EMBED_AUTH": ""
+          "PLAUSIBLE_DOMAIN": "",
+          "PLAUSIBLE_EMBED_AUTH": "",
+          "PLAUSIBLE_API_TOKEN": ""
         }
       },
       "ref": "0a2c784e1d511a5d7ef61eb8dda1f1db44280264"
