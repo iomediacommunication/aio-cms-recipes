@@ -1,0 +1,25 @@
+{
+  "manifests": {
+    "iomedia/aio-cms-stats-bundle": {
+      "manifest": {
+        "bundles": {
+          "Aio\\CmsStatsBundle\\AioCmsStatsBundle": [
+            "all"
+          ]
+        },
+        "copy-from-recipe": {
+          "config/": "%CONFIG_DIR%"
+        },
+        "copy-from-package": {
+          "recipe/config/routes/aio-cms-stats-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-stats-bundle.yaml",
+          "recipe/config/packages/aio-cms-stats.yaml": "%CONFIG_DIR%/packages/aio-cms-stats.yaml"
+        },
+        "env": {
+          "PLAUSIBLE_EMBED_WEBSITE": "",
+          "PLAUSIBLE_EMBED_AUTH": ""
+        }
+      },
+      "ref": "0a2c784e1d511a5d7ef61eb8dda1f1db44280264"
+    }
+  }
+}

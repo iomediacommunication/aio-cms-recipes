@@ -86,6 +86,11 @@
     "iomedia/aio-cms-passbook-bundle": [
       "dev-master",
       "master"
+    ],
+    "iomedia/aio-cms-stats-bundle": [
+      "dev-master",
+      "master",
+      "fabrriv/AIO-3-plausible-embed"
     ]
   },
   "branch": "main",
