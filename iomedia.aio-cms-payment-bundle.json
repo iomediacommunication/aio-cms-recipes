@@ -1,0 +1,20 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-payment-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsPaymentBundle\\AioCmsPaymentBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/config/routes/aio-cms-payment-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-payment-bundle.yaml"
+                }
+            },
+            "ref": "0fc18016fe360a84142f7a0f53f20b9071212c0f"
+        }
+    }
+}
