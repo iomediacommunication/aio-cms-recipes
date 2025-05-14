@@ -91,6 +91,12 @@
       "dev-master",
       "master",
       "fabrriv/AIO-3-plausible-embed"
+    ],
+    "iomedia/aio-cms-payment-bundle": [
+      "1.14",
+      "1.14.x-dev",
+      "dev-master",
+      "master"
     ]
   },
   "branch": "main",
