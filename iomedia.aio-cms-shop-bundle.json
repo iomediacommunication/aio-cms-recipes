@@ -18,7 +18,6 @@
                     "recipe/config/routes/aio-cms-shop-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-bundle.yaml",
                     "recipe/src/Entity/CmsShopBundle/Model/Category/Translation.php": "%SRC_DIR%/Entity/CmsShopBundle/Model/Category/Translation.php",
                     "recipe/src/Entity/CmsShopBundle/Category.php": "%SRC_DIR%/Entity/CmsShopBundle/Category.php",
-                    "recipe/src/Entity/CmsShopBundle/Currency.php": "%SRC_DIR%/Entity/CmsShopBundle/Currency.php",
                     "recipe/src/Entity/CmsShopBundle/Order.php": "%SRC_DIR%/Entity/CmsShopBundle/Order.php",
                     "recipe/src/Entity/CmsShopBundle/OrderItem.php": "%SRC_DIR%/Entity/CmsShopBundle/OrderItem.php",
                     "recipe/src/Entity/CmsShopBundle/Price.php": "%SRC_DIR%/Entity/CmsShopBundle/Price.php",
@@ -27,7 +26,7 @@
                     "recipe/src/Entity/CmsShopBundle/Stock.php": "%SRC_DIR%/Entity/CmsShopBundle/Stock.php"
                 }
             },
-            "ref": "2a07997683dc3e8d2cd2451727b7346d2a3a6066"
+            "ref": "86f3a5f8e49fd7560546db52c9d6bcaf73ebded7"
         }
     }
 }
