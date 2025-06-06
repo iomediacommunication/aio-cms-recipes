@@ -1,0 +1,20 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-shop-content-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsShopBundle\\AioCmsShopContentBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/config/routes/aio-cms-shop-content-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-content-bundle.yaml",
+                }
+            },
+            "ref": "86f3a5f8e49fd7560546db52c9d6bcaf73ebded7"
+        }
+    }
+}
