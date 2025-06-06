@@ -14,7 +14,7 @@
                     "recipe/config/routes/aio-cms-shop-content-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-content-bundle.yaml",
                 }
             },
-            "ref": "86f3a5f8e49fd7560546db52c9d6bcaf73ebded7"
+            "ref": "9a5748129a39d4a5da69e311d95570e401b98a4b"
         }
     }
 }
