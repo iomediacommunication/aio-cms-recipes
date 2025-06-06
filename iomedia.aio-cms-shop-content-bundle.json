@@ -3,7 +3,7 @@
         "iomedia/aio-cms-shop-content-bundle": {
             "manifest": {
                 "bundles": {
-                    "Aio\\CmsShopBundle\\AioCmsShopContentBundle": [
+                    "Aio\\CmsShopContentBundle\\AioCmsShopContentBundle": [
                         "all"
                     ]
                 },
