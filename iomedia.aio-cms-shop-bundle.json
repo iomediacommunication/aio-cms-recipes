@@ -22,7 +22,8 @@
                     "recipe/src/Entity/CmsShopBundle/OrderItem.php": "%SRC_DIR%/Entity/CmsShopBundle/OrderItem.php",
                     "recipe/src/Entity/CmsShopBundle/Price.php": "%SRC_DIR%/Entity/CmsShopBundle/Price.php",
                     "recipe/src/Entity/CmsShopBundle/Product.php": "%SRC_DIR%/Entity/CmsShopBundle/Product.php",
-                    "recipe/src/Entity/CmsShopBundle/ProductTranslation.php": "%SRC_DIR%/Entity/CmsShopBundle/ProductTranslation.php"
+                    "recipe/src/Entity/CmsShopBundle/ProductTranslation.php": "%SRC_DIR%/Entity/CmsShopBundle/ProductTranslation.php",
+                    "recipe/src/Entity/CmsShopBundle/Catalog.php": "%SRC_DIR%/Entity/CmsShopBundle/Catalog.php"
                 }
             },
             "ref": "86f3a5f8e49fd7560546db52c9d6bcaf73ebded7"
