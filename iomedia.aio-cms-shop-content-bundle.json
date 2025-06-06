@@ -11,7 +11,7 @@
                     "config/": "%CONFIG_DIR%"
                 },
                 "copy-from-package": {
-                    "recipe/config/routes/aio-cms-shop-content-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-content-bundle.yaml",
+                    "recipe/config/routes/aio-cms-shop-content-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-shop-content-bundle.yaml"
                 }
             },
             "ref": "9a5748129a39d4a5da69e311d95570e401b98a4b"
