@@ -103,6 +103,12 @@
       "1.14.x-dev",
       "dev-master",
       "master"
+    ],
+    "iomedia/aio-cms-icon-bundle": [
+      "1.14",
+      "1.14.x-dev",
+      "dev-master",
+      "master"
     ]
   },
   "branch": "main",
