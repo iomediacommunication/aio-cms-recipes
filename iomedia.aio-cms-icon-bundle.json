@@ -12,6 +12,9 @@
                 },
                 "copy-from-package": {
                     "recipe/config/routes/aio-cms-icon-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-icon-bundle.yaml"
+                },
+                "composer-scripts": {
+                    "aio:icon:generate": "symfony-cmd"
                 }
             },
             "ref": "d8dd921ee2dd512ae7502202dcccc0311d7271e2"
