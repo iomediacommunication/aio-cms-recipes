@@ -1,0 +1,20 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-icon-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsIconBundle\\AioCmsIconBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/config/routes/aio-cms-icon-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-icon-bundle.yaml"
+                }
+            },
+            "ref": "d8dd921ee2dd512ae7502202dcccc0311d7271e2"
+        }
+    }
+}
