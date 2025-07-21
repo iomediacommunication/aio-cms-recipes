@@ -1,0 +1,50 @@
+{
+    "manifests": {
+        "iomedia/aio-test-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Iomedia\\TestBundle\\TestBundle": [
+                        "dev",
+                        "test"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "tests/": "tests/"
+                }
+            },
+            "files": {
+                "tests/phpstan/symfony-console-application.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "use App\\Kernel;",
+                        "use Symfony\\Bundle\\FrameworkBundle\\Console\\Application;",
+                        "",
+                        "require __DIR__ . '/../../config/bootstrap.php';",
+                        "$kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);",
+                        "",
+                        "return new Application($kernel);",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "tests/phpstan/doctrine-object-manager.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "use App\\Kernel;",
+                        "",
+                        "require __DIR__ . '/../../config/bootstrap.php';",
+                        "$kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);",
+                        "$kernel->boot();",
+                        "",
+                        "return $kernel->getContainer()->get('doctrine')->getManager();",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e52191dcc21225931f604d110ebf0f4ebee7b242"
+        }
+    }
+}
