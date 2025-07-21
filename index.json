@@ -46,6 +46,12 @@
       "dev-master",
       "master"
     ],
+    "iomedia/aio-test-bundle": [
+      "1.14",
+      "1.14.x-dev",
+      "dev-master",
+      "master"
+    ],
     "iomedia/aio-cms-notification-bundle": [
       "1.5",
       "1.5.x-dev",
