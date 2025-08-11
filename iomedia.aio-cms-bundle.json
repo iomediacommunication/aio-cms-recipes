@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "iomedia/aio-cms-crm-bundle": {
+        "iomedia/aio-cms-bundle": {
             "manifest": {
                 "bundles": {
                     "Aio\\CmsBundle\\AioCmsBundle": [
@@ -9,9 +9,12 @@
                 },
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%"
+                },
+                "copy-from-package": {
+                    "recipe/public/favicon.ico": "%PUBLIC_DIR%/favicon.ico",
                 }
             },
-            "ref": "c11c5e8202a4d337c1f6d4617b2922a76240a759"
+            "ref": "354ed3b715ba74aa8c9d08b952af7b862afc4c76"
         }
     }
 }
