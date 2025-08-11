@@ -11,7 +11,7 @@
                     "config/": "%CONFIG_DIR%"
                 },
                 "copy-from-package": {
-                    "recipe/public/favicon.ico": "%PUBLIC_DIR%/favicon.ico",
+                    "recipe/public/favicon.ico": "%PUBLIC_DIR%/favicon.ico"
                 }
             },
             "ref": "354ed3b715ba74aa8c9d08b952af7b862afc4c76"
