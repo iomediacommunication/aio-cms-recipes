@@ -15,7 +15,7 @@
                     "recipe/config/routes/aio-cms-form-payment-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-form-payment-bundle.yaml"
                 }
             },
-            "ref": "5c0647e19a87a4b10c2f368e38d0a801ed672b7a"
+            "ref": "20f0eb1a044a5bafb0a5e77dd591c26ddd2e3119"
         }
     }
 }
