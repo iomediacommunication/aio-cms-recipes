@@ -115,6 +115,12 @@
       "1.14.x-dev",
       "dev-master",
       "master"
+    ],
+    "iomedia/aio-cms-form-payment-bundle": [
+      "1.16",
+      "1.16.x-dev",
+      "dev-master",
+      "master"
     ]
   },
   "branch": "main",

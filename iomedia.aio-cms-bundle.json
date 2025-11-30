@@ -11,10 +11,11 @@
                     "config/": "%CONFIG_DIR%"
                 },
                 "copy-from-package": {
-                    "recipe/public/favicon.ico": "%PUBLIC_DIR%/favicon.ico"
+                    "recipe/public/favicon.ico": "%PUBLIC_DIR%/favicon.ico",
+                    "recipe/config/packages/aio-cms-form-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-form-bundle.yaml"
                 }
             },
-            "ref": "354ed3b715ba74aa8c9d08b952af7b862afc4c76"
+            "ref": "d27a2217850cec386209bf29efe6faffb89238ee"
         }
     }
 }
