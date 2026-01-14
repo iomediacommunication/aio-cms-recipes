@@ -14,6 +14,9 @@
                     "recipe/public/favicon.ico": "%PUBLIC_DIR%/favicon.ico",
                     "recipe/config/packages/aio-cms-form-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-form-bundle.yaml"
                 }
+                "composer-scripts": {
+                    "aio:messenger:init --force": "symfony-cmd"
+                }
             },
             "ref": "d27a2217850cec386209bf29efe6faffb89238ee"
         }
