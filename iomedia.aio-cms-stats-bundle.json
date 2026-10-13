@@ -12,7 +12,7 @@
         },
         "copy-from-package": {
           "recipe/config/routes/aio-cms-stats-bundle.yaml": "%CONFIG_DIR%/routes/aio-cms-stats-bundle.yaml",
-          "recipe/config/packages/aio-cms-stats.yaml": "%CONFIG_DIR%/packages/aio-cms-stats.yaml"
+          "recipe/config/packages/aio-cms-stats-bundle.yaml": "%CONFIG_DIR%/packages/aio-cms-stats-bundle.yaml"
         },
         "env": {
           "PLAUSIBLE_EMBED_WEBSITE": "",
