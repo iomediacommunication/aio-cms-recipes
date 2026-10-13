@@ -102,7 +102,7 @@
     "iomedia/aio-cms-stats-bundle": [
       "dev-master",
       "master",
-      "fabrriv/AIO-3-plausible-embed"
+      "1.17"
     ],
     "iomedia/aio-cms-payment-bundle": [
       "1.14",
