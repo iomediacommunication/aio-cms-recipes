@@ -16,7 +16,7 @@
                     "recipe/config/routes/aio_cms_ai_bundle.yaml": "%CONFIG_DIR%/routes/aio_cms_ai_bundle.yaml"
                 },
                 "composer-scripts": {
-                    "aio:ai:chatkit:init --force": "symfony-cmd"
+                    "aio:ai:chatkit:init --force --strict": "symfony-cmd"
                 },
                 "gitignore": [
                     "/shared/chatkit-agent/",
