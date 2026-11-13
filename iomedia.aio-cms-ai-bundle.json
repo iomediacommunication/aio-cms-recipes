@@ -1,0 +1,31 @@
+{
+    "manifests": {
+        "iomedia/aio-cms-ai-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Aio\\CmsAiBundle\\AioCmsAiBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-package": {
+                    "recipe/chatkit-agent/pyproject.toml": "chatkit-agent/pyproject.toml",
+                    "recipe/chatkit-agent/uv.lock": "chatkit-agent/uv.lock",
+                    "recipe/chatkit-agent/.gitignore": "chatkit-agent/.gitignore",
+                    "recipe/chatkit-agent/app/": "chatkit-agent/app/",
+                    "recipe/config/packages/aio_cms_ai_bundle.yaml": "%CONFIG_DIR%/packages/aio_cms_ai_bundle.yaml",
+                    "recipe/config/routes/aio_cms_ai_bundle.yaml": "%CONFIG_DIR%/routes/aio_cms_ai_bundle.yaml"
+                },
+                "composer-scripts": {
+                    "aio:ai:chatkit:init --force": "symfony-cmd"
+                },
+                "gitignore": [
+                    "/shared/chatkit-agent/",
+                    "/chatkit-agent/.venv/",
+                    "/chatkit-agent/.env",
+                    "/chatkit-agent/**/__pycache__/"
+                ]
+            },
+            "ref": "a334e068fc4907565881407ad925f3c0c3e29aee"
+        }
+    }
+}

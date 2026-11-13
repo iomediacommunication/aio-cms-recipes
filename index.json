@@ -121,6 +121,9 @@
       "1.16.x-dev",
       "dev-master",
       "master"
+    ],
+    "iomedia/aio-cms-ai-bundle": [
+      "1.19"
     ]
   },
   "branch": "main",
